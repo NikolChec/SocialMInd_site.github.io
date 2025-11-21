@@ -1,0 +1,108 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BASE COLORS ===== */
+:root {
+    --blue-main: #2563eb;      /* Main SocialMind blue */
+    --blue-light: #3b82f6;
+    --blue-dark: #1e40af;
+    --text-dark: #0f172a;
+    --text-light: #f1f5f9;
+    --white: #ffffff;
+    --gray: #94a3b8;
+}
+
+/* ===== BASE STYLE ===== */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-dark);
+    background-color: var(--white);
+    line-height: 1.6;
+}
+
+/* ===== GLOBAL CONTAINERS ===== */
+section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    color: var(--blue-dark);
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue-main);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--blue-dark);
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: var(--blue-main);
+    padding: 20px;
+}
+
+header h1 {
+    color: var(--white);
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header a {
+    color: var(--white);
+}
+
+/* ===== HERO SECTION ===== */
+#hero {
+    text-align: center;
+    padding-top: 80px;
+}
+
+#hero h2 {
+    font-size: 2.8rem;
+    color: var(--blue-dark);
+}
+
+#hero p {
+    margin-top: 15px;
+    color: var(--text-dark);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+#hero a {
+    display: inline-block;
+    margin: 20px 10px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background-color: var(--blue-main);
+    color: white;
+}
+
+#hero a:hover {
+    background-color: var(--blue-dark);
+}
+
+/* ===== SIMPLE CARD DESIGN ===== */
+.card {
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}

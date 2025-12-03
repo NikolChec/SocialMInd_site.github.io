@@ -4,6 +4,61 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* ===== HEADER & NAVBAR ===== */
+header {
+    background-color: var(--blue-dark); /* deeper, cleaner blue */
+    box-shadow: 0 4px 12px rgba(241, 245, 255, 0.25);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brand (logo + text) */
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-logo {
+    height: 50px;   
+    width: auto;
+    display: block;
+}
+
+.brand-name {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+/* Navigation links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 999px;
+    transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.16);
+    transform: translateY(-1px);
+}
 
 /* ===== BASE COLORS ===== */
 :root {

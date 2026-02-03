@@ -161,3 +161,66 @@ header a {
     padding: 20px;
     margin-top: 20px;
 }
+/* ===== TEAM PAGE ===== */
+.team-grid {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.team-card {
+    background: var(--white);
+    border: 1px solid rgba(148, 163, 184, 0.6);
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+}
+
+.team-photo {
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border-radius: 16px;
+    border: 3px solid rgba(37, 99, 235, 0.25);
+}
+
+.team-name {
+    margin-top: 14px;
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.team-role {
+    margin-top: 4px;
+    font-weight: 700;
+    color: var(--blue-dark);
+}
+
+.team-bio {
+    margin-top: 10px;
+    color: rgba(15, 23, 42, 0.85);
+}
+
+.team-link {
+    display: inline-block;
+    margin-top: 14px;
+    padding: 10px 14px;
+    border-radius: 999px;
+    background: rgba(37, 99, 235, 0.12);
+    color: var(--blue-dark);
+    font-weight: 700;
+    transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.team-link:hover {
+    background: rgba(37, 99, 235, 0.18);
+    transform: translateY(-1px);
+}
+
+/* Responsive */
+@media (max-width: 780px) {
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}

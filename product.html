@@ -1,115 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SocialMind – How It Works</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand" aria-label="SocialMind Home">
+                <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo">
+                <span class="brand-name">SocialMind</span>
+            </a>
 
-    <!-- ========== HEADER / NAV ========== -->
-    <header>
-        <nav>
-            <h1>SocialMind</h1>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">How It Works</a></li>
-                <li><a href="impact.html">Impact</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="product.html" aria-current="page" data-i18n="nav_product">How It Works</a></li>
+                    <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
+                    <li><a href="team.html" data-i18n="nav_team">Team</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+                </div>
+            </div>
         </nav>
     </header>
 
     <main>
-
-        <!-- ========== HERO ========== -->
-        <section id="product-hero">
-            <h2>How SocialMind Works</h2>
-            <p>
-                SocialMind turns avoided social moments into guided, repeatable VR practice.
-                Each session blends immersive scenes with real-time AI interactions designed
-                to help teens build confidence safely and gradually.
-            </p>
-        </section>
-
-        <!-- ========== STEP 1 ========== -->
-        <section id="step-1">
-            <h3>Step 1 — Choose a Social Scenario</h3>
-            <p>
-                Students start by selecting a real-life school situation that usually feels stressful.
-                Examples include:
-            </p>
-
-            <ul>
-                <li>Introducing themselves to a group</li>
-                <li>Joining a conversation at lunch</li>
-                <li>Asking a question in class</li>
-                <li>Talking to a supportive adult figure (like our virtual counselor “Alon”)</li>
-            </ul>
-        </section>
-
-        <!-- ========== STEP 2 ========== -->
-        <section id="step-2">
-            <h3>Step 2 — Enter a VR Scene</h3>
-            <p>
-                With a VR headset, students step into a realistic school-based environment:
-                a classroom, hallway, counselor’s office, or group of peers. The visuals,
-                distance, eye contact, and tone create an immersive, emotionally engaging experience.
-            </p>
-        </section>
-
-        <!-- ========== STEP 3 ========== -->
-        <section id="step-3">
-            <h3>Step 3 — Interact with AI Characters</h3>
-            <p>
-                Students talk naturally while AI-powered characters respond in real time.
-                No scripts. No memorizing lines. Characters adjust their tone, pace, and reactions
-                based on the student’s responses.
-            </p>
-
-            <div class="card">
-                <h4>Real Conversation Flow</h4>
-                <p>
-                    Instead of pre-recorded options, each interaction feels unique,
-                    making practice feel authentic and relevant.
-                </p>
-            </div>
-
-            <div class="card">
-                <h4>Emotionally Safe Practice</h4>
-                <p>
-                    Students can retry as many times as they need — without fear of judgment.
+        <section id="product-hero" class="page-section page-hero" aria-labelledby="product-title">
+            <div class="container narrow-content">
+                <h1 id="product-title" data-i18n="product_title">How SocialMind Works</h1>
+                <p data-i18n="product_intro">
+                    SocialMind turns avoided social moments into guided, repeatable VR practice. Each session blends immersive scenes with real-time AI interactions designed to help teens build confidence safely and gradually.
                 </p>
             </div>
         </section>
 
-        <!-- ========== STEP 4 ========== -->
-        <section id="step-4">
-            <h3>Step 4 — Reflection & Micro-Goals</h3>
-            <p>
-                After each session, a short reflection helps students recognize progress.
-                They receive a small, achievable “micro-goal” for next time — such as:
-            </p>
+        <section id="step-1" class="page-section section-soft" aria-labelledby="step-1-title">
+            <div class="container narrow-content">
+                <h2 id="step-1-title" data-i18n="step1_title">Step 1 - Choose a Social Scenario</h2>
+                <p data-i18n="step1_text">
+                    Students start by selecting a real-life school situation that usually feels stressful. Examples include:
+                </p>
 
-            <ul>
-                <li>“Hold eye contact for one extra second.”</li>
-                <li>“Say your name with a clear voice.”</li>
-                <li>“Ask one simple question.”</li>
-            </ul>
-
-            <p>
-                These tiny steps reduce fear and gently build real-world courage.
-            </p>
+                <ul class="content-list">
+                    <li data-i18n="step1_1">Introducing themselves to a group</li>
+                    <li data-i18n="step1_2">Joining a conversation at lunch</li>
+                    <li data-i18n="step1_3">Asking a question in class</li>
+                    <li data-i18n="step1_4">Talking to a supportive adult figure (like our virtual counselor "Alon")</li>
+                </ul>
+            </div>
         </section>
 
+        <section id="step-2" class="page-section" aria-labelledby="step-2-title">
+            <div class="container narrow-content">
+                <h2 id="step-2-title" data-i18n="step2_title">Step 2 - Enter a VR Scene</h2>
+                <p data-i18n="step2_text">
+                    With a VR headset, students step into a realistic school-based environment: a classroom, hallway, counselor's office, or group of peers. The visuals, distance, eye contact, and tone create an immersive, emotionally engaging experience.
+                </p>
+            </div>
+        </section>
+
+        <section id="step-3" class="page-section section-soft" aria-labelledby="step-3-title">
+            <div class="container">
+                <div class="narrow-content center-inline">
+                    <h2 id="step-3-title" data-i18n="step3_title">Step 3 - Interact with AI Characters</h2>
+                    <p data-i18n="step3_text">
+                        Students talk naturally while AI-powered characters respond in real time. No scripts. No memorizing lines. Characters adjust their tone, pace, and reactions based on the student's responses.
+                    </p>
+                </div>
+
+                <div class="card-grid two-col top-space">
+                    <article class="card">
+                        <h3 data-i18n="step3_card1_title">Real Conversation Flow</h3>
+                        <p data-i18n="step3_card1_text">
+                            Instead of pre-recorded options, each interaction feels unique, making practice feel authentic and relevant.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3 data-i18n="step3_card2_title">Emotionally Safe Practice</h3>
+                        <p data-i18n="step3_card2_text">
+                            Students can retry as many times as they need - without fear of judgment.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="step-4" class="page-section" aria-labelledby="step-4-title">
+            <div class="container narrow-content">
+                <h2 id="step-4-title" data-i18n="step4_title">Step 4 - Reflection &amp; Micro-Goals</h2>
+                <p data-i18n="step4_text">
+                    After each session, a short reflection helps students recognize progress. They receive a small, achievable "micro-goal" for next time - such as:
+                </p>
+
+                <ul class="content-list">
+                    <li data-i18n="step4_1">"Hold eye contact for one extra second."</li>
+                    <li data-i18n="step4_2">"Say your name with a clear voice."</li>
+                    <li data-i18n="step4_3">"Ask one simple question."</li>
+                </ul>
+
+                <p data-i18n="step4_end">
+                    These tiny steps reduce fear and gently build real-world courage.
+                </p>
+            </div>
+        </section>
     </main>
 
+    <script src="i18n.js" defer></script>
 </body>
 
 </html>

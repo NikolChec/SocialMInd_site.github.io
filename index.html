@@ -1,134 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SocialMind – Home</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-
-    <!-- ========== HEADER / NAVBAR ========== -->
-    <header>
-        <nav class="navbar">
-            <div class="brand">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Primary navigation">
+            <a href="index.html" class="brand" aria-label="SocialMind Home">
                 <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo">
                 <span class="brand-name">SocialMind</span>
-            </div>
+            </a>
 
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="product.html">How It Works</a></li>
-                <li><a href="impact.html">Impact</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="index.html" aria-current="page" data-i18n="nav_home">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="product.html" data-i18n="nav_product">How It Works</a></li>
+                    <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
+                    <li><a href="team.html" data-i18n="nav_team">Team</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+                </ul>
+
+                <div class="lang-switch" role="group" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+                </div>
+            </div>
         </nav>
     </header>
 
+    <main>
+        <section id="hero" class="hero-section" aria-labelledby="hero-title">
+            <div class="container">
+                <div class="hero-copy">
+                    <h1 id="hero-title" data-i18n="hero_title">Beating the fear, Bringing friends near.</h1>
 
-    <!-- ========== HERO SECTION ========== -->
-    <section id="hero">
-        <h2>Beating the fear,Bringing friends near</h2>
+                    <p data-i18n="hero_p1">
+                        A safe, immersive way for teens to practice everyday social situations and build confidence-guided by real-time AI characters in VR.
+                    </p>
 
-        <p>
-            A safe, immersive way for teens to practice everyday social situations
-            and build confidence—guided by real-time AI characters in VR.
-        </p>
+                    <p data-i18n="hero_p2">
+                        We help students overcome social anxiety step by step, in a supportive virtual environment that adapts to their needs.
+                    </p>
 
-        <p>
-            We help students overcome social anxiety step by step,
-            in a supportive virtual environment that adapts to their needs.
-        </p>
+                    <div class="hero-actions">
+                        <a href="about.html" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
+                        <a href="product.html" class="btn btn-secondary" data-i18n="btn_see_how">See How It Works</a>
+                    </div>
+                </div>
 
-        <div>
-            <a href="about.html">Learn More</a>
-            <a href="product.html">See How It Works</a>
-        </div>
+                <figure class="hero-image-wrapper">
+                    <img src="images/presenting.jpg" alt="SocialMind team presenting" class="hero-image">
+                </figure>
+            </div>
+        </section>
 
-        <!-- Hero image -->
-        <div class="hero-image-wrapper">
-            <img src="images/presenting.jpeg" alt="SocialMind team presenting" class="hero-image">
-        </div>
-    </section>
+        <section id="helps-with" class="page-section" aria-labelledby="helps-with-title">
+            <div class="container">
+                <h2 id="helps-with-title" data-i18n="helps_title">What SocialMind Helps With</h2>
+                <div class="card-grid three-col">
+                    <article class="card">
+                        <h3 data-i18n="helps_card1_title">Social Anxiety</h3>
+                        <p data-i18n="helps_card1_text">Helping students who struggle with speaking in class or joining groups.</p>
+                    </article>
 
+                    <article class="card">
+                        <h3 data-i18n="helps_card2_title">Real Practice, No Judgment</h3>
+                        <p data-i18n="helps_card2_text">AI-powered characters allow safe, repeatable practice without pressure.</p>
+                    </article>
 
-    <!-- ========== WHAT SOCIALMIND HELPS WITH ========== -->
-    <section id="helps-with">
-        <h3>What SocialMind Helps With</h3>
+                    <article class="card">
+                        <h3 data-i18n="helps_card3_title">Stronger Social-Emotional Skills</h3>
+                        <p data-i18n="helps_card3_text">Building confidence, communication, and emotional self-awareness.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h4>Social Anxiety</h4>
-            <p>Helping students who struggle with speaking in class or joining groups.</p>
-        </div>
+        <section id="why-it-matters" class="page-section section-soft" aria-labelledby="why-it-matters-title">
+            <div class="container narrow-content">
+                <h2 id="why-it-matters-title" data-i18n="why_title">Why Social Skills Matter</h2>
+                <p data-i18n="why_text">
+                    Many students avoid raising their hand or speaking up-not because they don't care, but because social situations feel overwhelming. SocialMind turns avoided moments into opportunities for growth.
+                </p>
+            </div>
+        </section>
 
-        <div class="card">
-            <h4>Real Practice, No Judgment</h4>
-            <p>AI-powered characters allow safe, repeatable practice without pressure.</p>
-        </div>
+        <section id="audience" class="page-section" aria-labelledby="audience-title">
+            <div class="container">
+                <h2 id="audience-title" data-i18n="audience_title">Who It's For</h2>
+                <div class="card-grid three-col">
+                    <article class="card">
+                        <h3 data-i18n="audience_card1_title">Students</h3>
+                        <p data-i18n="audience_card1_text">A safe way to practice situations that feel intimidating in real life.</p>
+                    </article>
 
-        <div class="card">
-            <h4>Stronger Social-Emotional Skills</h4>
-            <p>Building confidence, communication, and emotional self-awareness.</p>
-        </div>
-    </section>
+                    <article class="card">
+                        <h3 data-i18n="audience_card2_title">Educators &amp; Counselors</h3>
+                        <p data-i18n="audience_card2_text">A modern SEL tool that boosts support capacity in schools.</p>
+                    </article>
 
+                    <article class="card">
+                        <h3 data-i18n="audience_card3_title">Partners &amp; Innovators</h3>
+                        <p data-i18n="audience_card3_text">For schools and organizations exploring meaningful mental-health innovation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- ========== WHY SOCIAL SKILLS MATTER ========== -->
-    <section id="why-it-matters">
-        <h3>Why Social Skills Matter</h3>
+        <section id="highlights" class="page-section section-soft" aria-labelledby="highlights-title">
+            <div class="container narrow-content">
+                <h2 id="highlights-title" data-i18n="highlights_title">Highlights</h2>
+                <ul class="content-list">
+                    <li data-i18n="highlights_1">AI-powered interactive characters</li>
+                    <li data-i18n="highlights_2">Short VR scenarios based on real school life</li>
+                    <li data-i18n="highlights_3">Personal goals after each session</li>
+                    <li data-i18n="highlights_4">Designed with counselors &amp; advisors</li>
+                    <li data-i18n="highlights_5">Built by students with a mission</li>
+                </ul>
+            </div>
+        </section>
 
-        <p>
-            Many students avoid raising their hand or speaking up—not because they don't care,
-            but because social situations feel overwhelming. SocialMind turns avoided moments
-            into opportunities for growth.
-        </p>
-    </section>
+        <section id="footer-teaser" class="page-section" aria-label="About SocialMind">
+            <div class="container narrow-content teaser-card">
+                <p data-i18n="teaser_text">Want to understand the story behind SocialMind?</p>
+                <a href="about.html" class="teaser-link" data-i18n="teaser_link">Explore our mission -&gt;</a>
+            </div>
+        </section>
+    </main>
 
-
-    <!-- ========== WHO IT'S FOR ========== -->
-    <section id="audience">
-        <h3>Who It's For</h3>
-
-        <div class="card">
-            <h4>Students</h4>
-            <p>A safe way to practice situations that feel intimidating in real life.</p>
-        </div>
-
-        <div class="card">
-            <h4>Educators & Counselors</h4>
-            <p>A modern SEL tool that boosts support capacity in schools.</p>
-        </div>
-
-        <div class="card">
-            <h4>Partners & Innovators</h4>
-            <p>For schools and organizations exploring meaningful mental-health innovation.</p>
-        </div>
-    </section>
-
-
-    <!-- ========== HIGHLIGHTS ========== -->
-    <section id="highlights">
-        <h3>Highlights</h3>
-        <ul>
-            <li>AI-powered interactive characters</li>
-            <li>Short VR scenarios based on real school life</li>
-            <li>Personal goals after each session</li>
-            <li>Designed with counselors & advisors</li>
-            <li>Built by students with a mission</li>
-        </ul>
-    </section>
-
-
-    <!-- ========== FOOTER TEASER ========== -->
-    <section id="footer-teaser">
-        <p>Want to understand the story behind SocialMind?</p>
-        <a href="about.html">Explore our mission →</a>
-    </section>
-
+    <script src="i18n.js" defer></script>
 </body>
+
 </html>

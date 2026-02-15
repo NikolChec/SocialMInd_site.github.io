@@ -97,6 +97,9 @@ const translations = {
     step2_title: "Step 2 - Enter a VR Scene",
     step2_text:
       "With a VR headset, students step into a realistic school-based environment: a classroom, hallway, counselor's office, or group of peers. The visuals, distance, eye contact, and tone create an immersive, emotionally engaging experience.",
+    demo_title: "Watch a Short Demo",
+    demo_caption:
+      "A quick look at how students practice real social scenarios with AI-guided VR interactions.",
     step3_title: "Step 3 - Interact with AI Characters",
     step3_text:
       "Students talk naturally while AI-powered characters respond in real time. No scripts. No memorizing lines. Characters adjust their tone, pace, and reactions based on the student's responses.",
@@ -258,6 +261,9 @@ const translations = {
     step2_title: "שלב 2 - כניסה לסצנת VR",
     step2_text:
       "באמצעות משקפי VR התלמידים נכנסים לסביבה בית ספרית מציאותית: כיתה, מסדרון, חדר יועץ או קבוצת תלמידים. הוויזואליות, המרחק, קשר העין והטון יוצרים חוויה סוחפת ומעוררת רגשית.",
+    demo_title: "צפו בהדגמה קצרה",
+    demo_caption:
+      "מבט מהיר על האופן שבו תלמידים מתרגלים מצבים חברתיים אמיתיים עם אינטראקציות VR מונחות AI.",
     step3_title: "שלב 3 - אינטראקציה עם דמויות AI",
     step3_text:
       "התלמידים מדברים באופן טבעי בזמן שדמויות AI מגיבות בזמן אמת. בלי תסריטים ובלי לשנן משפטים. הדמויות מתאימות את הטון, הקצב והתגובות לפי תשובות התלמיד.",

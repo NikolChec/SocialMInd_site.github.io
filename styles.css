@@ -231,9 +231,16 @@ button:focus-visible {
     padding-top: 5.7rem;
 }
 
+.hero-section .container {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 2rem;
+}
+
 .hero-copy {
     max-width: 840px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .hero-actions {
@@ -280,8 +287,8 @@ button:focus-visible {
 }
 
 .hero-image-wrapper {
-    margin: 2.1rem auto 0;
-    max-width: 900px;
+    margin: 0;
+    max-width: 100%;
     border-radius: var(--radius-lg);
     overflow: hidden;
     border: 1px solid rgba(37, 99, 235, 0.2);
@@ -324,6 +331,26 @@ button:focus-visible {
 .team-card:hover {
     transform: translateY(-4px);
     box-shadow: 0 16px 30px rgba(15, 34, 71, 0.13);
+}
+
+.media-block {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.media-video {
+    width: 100%;
+    max-width: 900px;
+    border-radius: 18px;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    box-shadow: var(--shadow-soft);
+    background: #000000;
+}
+
+.media-caption {
+    margin-top: 0.9rem;
+    max-width: 72ch;
 }
 
 .content-list {
@@ -469,10 +496,29 @@ html[dir="rtl"] .content-list li::before {
         padding-top: 4.5rem;
     }
 
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+    }
+
+    .hero-copy {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+
+    .hero-image-wrapper {
+        margin: 0 auto;
+        max-width: 900px;
+    }
+
     .three-col,
     .two-col,
     .team-grid {
         grid-template-columns: 1fr;
+    }
+
+    .media-video {
+        border-radius: 16px;
     }
 
     .container {

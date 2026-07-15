@@ -44,6 +44,24 @@
   if (form) {
     var status = form.querySelector("[data-form-status]");
     var email = "socialmind2025@gmail.com";
+    var text = {
+      invalid: {
+        en: "Please complete the required fields, then email SocialMind using the fallback below.",
+        he: "נא למלא את שדות החובה. לאחר מכן ניתן לשלוח ל-SocialMind דרך האימייל החלופי."
+      },
+      ready: {
+        en: "Your message is ready. Your email app should open so you can send it to SocialMind.",
+        he: "ההודעה מוכנה. אפליקציית האימייל אמורה להיפתח כדי שתוכלו לשלוח אותה ל-SocialMind."
+      },
+      subject: {
+        en: "SocialMind demo request",
+        he: "בקשת הדגמה של SocialMind"
+      }
+    };
+
+    function localized(entry) {
+      return document.documentElement.lang === "he" ? entry.he : entry.en;
+    }
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -59,13 +77,13 @@
 
       if (invalid) {
         if (status) {
-          status.textContent = "Please complete the required fields, then email SocialMind using the fallback below.";
+          status.textContent = localized(text.invalid);
         }
         return;
       }
 
       var data = new FormData(form);
-      var subject = encodeURIComponent("SocialMind demo request");
+      var subject = encodeURIComponent(localized(text.subject));
       var body = encodeURIComponent(
         "Name: " + data.get("name") + "\n" +
         "School or organization: " + data.get("organization") + "\n" +
@@ -76,7 +94,7 @@
       );
 
       if (status) {
-        status.textContent = "Your message is ready. Your email app should open so you can send it to SocialMind.";
+        status.textContent = localized(text.ready);
       }
       window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
     });

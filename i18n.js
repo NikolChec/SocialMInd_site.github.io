@@ -712,6 +712,19 @@ function applyLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     if (Object.prototype.hasOwnProperty.call(dict, key)) {
       el.textContent = dict[key];
+    } else {
+      const inline = el.getAttribute(`data-i18n-${safeLang}`);
+      if (inline !== null) {
+        el.textContent = inline;
+      }
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-attr]").forEach((el) => {
+    const attr = el.getAttribute("data-i18n-attr");
+    const value = el.getAttribute(`data-i18n-${safeLang}`);
+    if (attr && value !== null) {
+      el.setAttribute(attr, value);
     }
   });
 

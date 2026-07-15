@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SocialMind - AI + VR social practice for teens</title>
+  <title>SocialMind - AI-powered social skills practice for schools</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,10 @@
       <div class="nav-right" id="nav-right">
         <ul class="nav-links">
           <li><a href="product.html" data-i18n="nav_product">Product</a></li>
-          <li><a href="#audience-paths" data-i18n="nav_schools">For Schools</a></li>
-          <li><a href="impact.html" data-i18n="nav_evidence">Evidence</a></li>
+          <li><a href="#built-for-schools" data-i18n="nav_schools">For Schools</a></li>
+          <li><a href="impact.html" data-i18n="nav_research">Research</a></li>
+          <li><a href="#faq" data-i18n="nav_privacy">Privacy</a></li>
+          <li><a href="#demo-pilot" data-i18n="nav_implementation">Implementation</a></li>
           <li><a href="about.html" data-i18n="nav_company">About</a></li>
         </ul>
 
@@ -38,268 +40,273 @@
           <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
         </div>
 
-        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav_book_pilot">Book a pilot</a>
+        <a href="contact.html" class="btn btn-primary nav-cta" data-i18n="nav_request_demo">Request a Demo</a>
       </div>
     </nav>
   </header>
 
-  <main>
+  <main class="homepage">
     <section class="home-hero" aria-labelledby="hero-heading">
-      <div class="container home-hero-grid">
+      <div class="section-container home-hero-grid">
         <div class="home-hero-copy">
           <h1 id="hero-heading">
-            <span data-i18n="hero_title_pre">Practice social moments in a</span>
-            <span class="hl-blue"><span data-i18n="hero_title_keyword">safe VR space.</span></span>
-            <span data-i18n="hero_title_mid"></span>
-            <span class="hl-blue" data-i18n="hero_title_emphasis"></span>
+            <span data-i18n="hero_title_line1">Practice social skills</span>
+            <span><span data-i18n="hero_title_join"> with </span><span class="hl-blue" data-i18n="hero_title_line2">confidence.</span></span>
           </h1>
           <p class="hero-lead" data-i18n="hero_lead">
-            SocialMind helps teens rehearse everyday school situations with real-time AI characters, guided reflection, and small confidence-building goals.
+            Guided AI conversations help students practice real school moments in a safe, supportive space—then reflect and grow.
           </p>
 
           <div class="hero-actions">
-            <a href="contact.html" class="btn btn-primary" data-i18n="hero_cta_primary">Book a school pilot</a>
-            <a href="#how-it-works" class="btn btn-ghost" data-i18n="hero_cta_secondary">See how it works</a>
+            <a href="contact.html" class="btn btn-primary" data-i18n="hero_cta_primary">Request a Demo</a>
+            <a href="product.html" class="btn btn-ghost" data-i18n="hero_cta_secondary">Explore the Platform</a>
           </div>
+
+          <p class="hero-trust-line" data-i18n="hero_trust_line">Built for schools. Privacy first. Human judgment always central.</p>
         </div>
 
-        <div class="hero-media" aria-label="SocialMind product preview">
-          <img src="images/hero-product-scene.png" alt="SocialMind VR social practice session with AI feedback and micro-goal panels">
-        </div>
-      </div>
-    </section>
-
-    <section id="product-showcase" class="product-showcase" aria-labelledby="showcase-hdg">
-      <div class="container">
-        <div class="section-intro showcase-intro">
-          <p class="eyebrow"><span data-i18n="showcase_eyebrow">Product flow</span></p>
-          <h2 id="showcase-hdg" data-i18n="showcase_title">How a SocialMind session works</h2>
-          <p class="section-lead" data-i18n="showcase_lead">Each session gives students a safe, structured way to practice a real school situation, pause, retry, and leave with one small next step.</p>
-        </div>
-
-        <div class="session-steps" aria-label="SocialMind session flow">
-          <article class="session-step-card">
-            <span class="step-number" data-i18n="session_step1_num">01</span>
-            <span class="step-icon" aria-hidden="true">+</span>
-            <h3 data-i18n="session_step1_title">Choose a scenario</h3>
-            <p data-i18n="session_step1_text">Students choose a real school situation they want to practice, such as joining a group, asking a question, or starting a conversation.</p>
-          </article>
-
-          <article class="session-step-card">
-            <span class="step-number" data-i18n="session_step2_num">02</span>
-            <span class="step-icon" aria-hidden="true">VR</span>
-            <h3 data-i18n="session_step2_title">Enter a VR scene</h3>
-            <p data-i18n="session_step2_text">They step into a calm, school-based virtual environment that feels real enough to practice, but safe enough to retry.</p>
-          </article>
-
-          <article class="session-step-card">
-            <span class="step-number" data-i18n="session_step3_num">03</span>
-            <span class="step-icon" aria-hidden="true">AI</span>
-            <h3 data-i18n="session_step3_title">Talk with AI characters</h3>
-            <p data-i18n="session_step3_text">Students practice natural conversation with real-time AI characters that respond to what they say.</p>
-          </article>
-
-          <article class="session-step-card">
-            <span class="step-number" data-i18n="session_step4_num">04</span>
-            <span class="step-icon" aria-hidden="true">✓</span>
-            <h3 data-i18n="session_step4_title">Reflect & set a micro-goal</h3>
-            <p data-i18n="session_step4_text">They finish with a short reflection and one small confidence-building goal for next time.</p>
-          </article>
+        <div class="hero-media hero-session-card" aria-label="SocialMind product session preview">
+          <img src="images/product/hero-socialmind-session.png" alt="SocialMind AI-guided social skills practice session with feedback and micro-goal panels">
         </div>
       </div>
     </section>
 
-    <section id="what-it-is" class="home-section home-section-light" aria-labelledby="what-hdg">
-      <div class="container">
+    <section class="home-trust-strip trust-band" aria-label="SocialMind trust indicators">
+      <div class="section-container trust-layout">
+        <div class="trust-band-list">
+          <span data-i18n="trust_item_1">Youth-led initiative</span>
+          <span data-i18n="trust_item_2">Selected innovation programs</span>
+          <span data-i18n="trust_item_3">Student dignity by design</span>
+          <span data-i18n="trust_item_4">English & Hebrew experience</span>
+          <span data-i18n="trust_item_5">Responsible AI development</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="practice-journey" class="home-practice practice-journey-section" aria-labelledby="practice-journey-hdg">
+      <div class="section-container">
         <div class="section-intro">
-          <p class="eyebrow"><span data-i18n="what_eyebrow">What it is</span></p>
-          <h2 id="what-hdg" data-i18n="what_title">A gentle practice layer for social-emotional learning.</h2>
-          <p class="section-lead" data-i18n="what_lead">Counselors are stretched thin and many students struggle quietly. SocialMind gives schools a calm, structured way for every student to build social confidence - safely, and on their own time.</p>
+          <p class="eyebrow"><span data-i18n="journey_eyebrow">Student practice journey</span></p>
+          <h2 id="practice-journey-hdg" data-i18n="journey_title">Students practice real moments—again and again.</h2>
+          <p class="section-lead" data-i18n="journey_intro">Guided conversations in realistic school situations.</p>
         </div>
 
-        <div class="value-grid">
-          <article class="value-card">
-            <span data-i18n="feat1_num">01 / STUDENTS</span>
-            <h3 data-i18n="feat1_title">Practice without the pressure</h3>
-            <p data-i18n="feat1_text">Rehearse intimidating moments in private - and discover, one small step at a time, that they can do it.</p>
-          </article>
-
-          <article class="value-card">
-            <span data-i18n="feat2_num">02 / EDUCATORS</span>
-            <h3 data-i18n="feat2_title">Extend your support, with care</h3>
-            <p data-i18n="feat2_text">An evidence-informed SEL tool that helps counselors reach far beyond what one-to-one time allows.</p>
-          </article>
-
-          <article class="value-card">
-            <span data-i18n="feat3_num">03 / SCHOOLS</span>
-            <h3 data-i18n="feat3_title">Wellbeing you can stand behind</h3>
-            <p data-i18n="feat3_text">A modern, measurable program that shows your community you take belonging seriously.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="why-section-v2" aria-labelledby="why-hdg">
-      <div class="container why-grid-v2">
-        <div>
-          <p class="eyebrow"><span data-i18n="matters_eyebrow">Why it matters</span></p>
-          <h2 id="why-hdg" data-i18n="matters_title">Many students avoid the moments that would help them feel connected.</h2>
-        </div>
-        <div class="why-body-v2">
-          <blockquote>
-            <span data-i18n="matters_quote_pre">Many students don't speak up — not because they don't care, but because the moment feels</span>
-            <span class="hl-cyan" data-i18n="matters_quote_hl">overwhelming</span>.
-          </blockquote>
-          <p data-i18n="matters_body">Over time, avoidance quietly becomes a habit, and students who look "fine" can struggle in silence. SocialMind turns those avoided moments into gentle, repeatable practice — so courage has somewhere safe to grow.</p>
-          <p data-i18n="matters_school_need">Schools need support tools that scale with care: structured practice, student dignity, and clear educator-friendly language.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="how-it-works" class="product-tour" aria-labelledby="product-tour-hdg">
-      <div class="container product-tour-grid">
-        <div class="product-copy">
-          <p class="eyebrow eyebrow-light"><span data-i18n="how_eyebrow">How it works</span></p>
-          <h2 id="product-tour-hdg" data-i18n="how_title">From an avoided moment to a rehearsed skill.</h2>
-          <p data-i18n="how_lead">Every short session blends an immersive scene with real-time AI - designed to build confidence safely and gradually.</p>
-
-          <div class="flow-list">
-            <article>
-              <span data-i18n="how_step1_n">STEP 01</span>
-              <h3 data-i18n="how_step1_title">Choose a scenario</h3>
-              <p data-i18n="how_step1_text">Pick a real situation that usually feels stressful - from introductions to asking for help.</p>
+        <div class="journey-story">
+          <div class="journey-scenarios">
+            <article class="journey-scenario">
+              <span aria-hidden="true">01</span>
+              <h3 data-i18n="journey_card1_title">Starting a Conversation</h3>
+              <p data-i18n="journey_card1_text">Students practice opening a conversation, staying engaged, and building confidence.</p>
             </article>
-            <article>
-              <span data-i18n="how_step2_n">STEP 02</span>
-              <h3 data-i18n="how_step2_title">Step into the scene</h3>
-              <p data-i18n="how_step2_text">Enter a realistic, calm school environment that feels real enough to matter, yet stays safe.</p>
+
+            <article class="journey-scenario">
+              <span aria-hidden="true">02</span>
+              <h3 data-i18n="journey_card2_title">Joining the Group</h3>
+              <p data-i18n="journey_card2_text">Students practice joining a group, introducing themselves, and participating with ease.</p>
             </article>
-            <article>
-              <span data-i18n="how_step3_n">STEP 03</span>
-              <h3 data-i18n="how_step3_title">Talk with AI characters</h3>
-              <p data-i18n="how_step3_text">Natural, real-time conversation with no scripts - and the freedom to retry as often as needed.</p>
-            </article>
-            <article>
-              <span data-i18n="how_step4_n">STEP 04</span>
-              <h3 data-i18n="how_step4_title">Reflect &amp; set a goal</h3>
-              <p data-i18n="how_step4_text">End with a short reflection and one small, kind micro-goal for next time.</p>
-            </article>
+          </div>
+
+          <div class="journey-visual">
+            <img src="images/product/joining-a-group.png.png" alt="A classroom group scene for joining a group practice">
           </div>
         </div>
       </div>
     </section>
 
-    <section id="proof" class="home-section evidence-section" aria-labelledby="proof-hdg">
-      <div class="container proof-grid-v2">
-        <div class="proof-copy-v2">
-          <p class="eyebrow"><span data-i18n="proof_eyebrow">Why schools trust SocialMind</span></p>
-          <h2 id="proof-hdg" data-i18n="proof_title">Built with educators. Tested in the real world.</h2>
-          <p data-i18n="proof_lead">SocialMind is a youth-led initiative shaped alongside counselors and advisors, validated through international competitions, and now in active development as a full MVP for structured school sessions.</p>
+    <section id="built-for-schools" class="home-schools schools-system-section" aria-labelledby="built-hdg">
+      <div class="section-container schools-layout">
+        <div class="schools-copy">
+          <p class="eyebrow"><span data-i18n="schools_eyebrow">Built for schools</span></p>
+          <h2 id="built-hdg" data-i18n="schools_title">Built for schools. Informed by educator conversations.</h2>
+          <p data-i18n="schools_intro">SocialMind supports student practice while keeping human educator judgment central.</p>
+          <ul class="school-principles">
+            <li data-i18n="schools_point1">Supports students as they build real social confidence</li>
+            <li data-i18n="schools_point2">Non-diagnostic and never a replacement for professionals</li>
+            <li data-i18n="schools_point3">English & Hebrew experience</li>
+            <li data-i18n="schools_point4">Collaborative approach to school implementation</li>
+          </ul>
         </div>
 
-        <div class="proof-cards-v2">
+        <div class="school-flow" aria-label="SocialMind school support flow">
           <article>
-            <strong data-i18n="stat1_n">3</strong>
-            <span data-i18n="stat1_l">International competitions reached</span>
+            <span aria-hidden="true">01</span>
+            <h3 data-i18n="school_flow_1">Student Practice</h3>
           </article>
           <article>
-            <strong data-i18n="stat2_n">3</strong>
-            <span data-i18n="stat2_l">UN SDGs directly supported</span>
+            <span aria-hidden="true">02</span>
+            <h3 data-i18n="school_flow_2">AI Feedback</h3>
           </article>
           <article>
-            <strong data-i18n="stat3_n" dir="ltr">EN·HE</strong>
-            <span data-i18n="stat3_l">Bilingual &amp; RTL-ready</span>
+            <span aria-hidden="true">03</span>
+            <h3 data-i18n="school_flow_3">Reflection</h3>
+          </article>
+          <article>
+            <span aria-hidden="true">04</span>
+            <h3 data-i18n="school_flow_4">Educator Support</h3>
           </article>
         </div>
+
+        <a href="contact.html" class="btn btn-primary schools-cta" data-i18n="schools_cta">Explore SocialMind for Schools</a>
       </div>
     </section>
 
-    <section id="audience-paths" class="home-section paths-section-v2" aria-labelledby="paths-hdg">
-      <div class="container">
+    <section id="demo-pilot" class="home-pilot demo-pilot-section" aria-labelledby="demo-pilot-hdg">
+      <div class="section-container">
         <div class="section-intro">
-          <p class="eyebrow"><span data-i18n="paths_eyebrow">Find your path</span></p>
-          <h2 id="paths-hdg" data-i18n="paths_title">Whoever you are, there's a way in.</h2>
+          <p class="eyebrow"><span data-i18n="demo_eyebrow">Implementation path</span></p>
+          <h2 id="demo-pilot-hdg" data-i18n="demo_title">From demo to pilot—together.</h2>
+          <p class="section-lead" data-i18n="demo_intro">A clear, collaborative process for every school.</p>
         </div>
 
-        <div class="paths-grid-v2">
-          <article class="path-card-v2 path-card-v2-primary">
-            <span data-i18n="path1_k">Schools &amp; educators</span>
-            <h3 data-i18n="path1_title">Bring SocialMind to your students</h3>
-            <p data-i18n="path1_text">Start a structured pilot and give your school a calm new way to support social confidence.</p>
-            <a href="contact.html" data-i18n="path1_cta">Book a pilot</a>
-          </article>
+        <ol class="demo-steps">
+          <li>
+            <span>01</span>
+            <strong data-i18n="demo_step1">Request a Demo</strong>
+          </li>
+          <li>
+            <span>02</span>
+            <strong data-i18n="demo_step2">Introductory Meeting</strong>
+          </li>
+          <li>
+            <span>03</span>
+            <strong data-i18n="demo_step3">Product Walkthrough</strong>
+          </li>
+          <li>
+            <span>04</span>
+            <strong data-i18n="demo_step4">School Needs Discussion</strong>
+          </li>
+          <li>
+            <span>05</span>
+            <strong data-i18n="demo_step5">Mutual Fit</strong>
+          </li>
+          <li>
+            <span>06</span>
+            <strong data-i18n="demo_step6">Possible Pilot Proposal</strong>
+          </li>
+        </ol>
 
-          <article class="path-card-v2">
-            <span data-i18n="path2_k">Partners &amp; mentors</span>
-            <h3 data-i18n="path2_title">Build the future of SEL with us</h3>
-            <p data-i18n="path2_text">Collaborate on programs, mentoring, and research that help more teens feel they belong.</p>
-            <a href="contact.html" data-i18n="path2_cta">Explore partnership</a>
-          </article>
+        <div class="demo-note">
+          <p data-i18n="demo_note">A demo request begins a conversation. It does not commit your school to a pilot.</p>
+          <a href="contact.html" class="btn btn-primary" data-i18n="demo_cta">Request a Demo</a>
+        </div>
+      </div>
+    </section>
 
-          <article class="path-card-v2">
-            <span data-i18n="path3_k">Investors &amp; supporters</span>
-            <h3 data-i18n="path3_title">Support a mission with momentum</h3>
-            <p data-i18n="path3_text">A focused youth-led team building a real product for a growing student wellbeing need.</p>
-            <a href="contact.html" data-i18n="path3_cta">Request the deck</a>
+    <section id="faq" class="home-faq faq-section" aria-labelledby="faq-hdg">
+      <div class="section-container faq-container">
+        <div class="section-intro">
+          <p class="eyebrow"><span data-i18n="faq_eyebrow">FAQ</span></p>
+          <h2 id="faq-hdg" data-i18n="faq_title">Questions schools ask most</h2>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q1" aria-expanded="false" aria-controls="faq-a1"><span data-i18n="faq_q1">How does SocialMind work?</span></button></h3>
+            <div class="faq-panel" id="faq-a1" role="region" aria-labelledby="faq-q1" aria-hidden="true"><p data-i18n="faq_a1">Students practice school-based social moments through guided AI conversations, then receive reflection prompts and small next steps.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q2" aria-expanded="false" aria-controls="faq-a2"><span data-i18n="faq_q2">Is student data safe?</span></button></h3>
+            <div class="faq-panel" id="faq-a2" role="region" aria-labelledby="faq-q2" aria-hidden="true"><p data-i18n="faq_a2">SocialMind is designed with privacy-aware school use in mind. We discuss data needs, access, and safeguards with schools before any implementation.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q3" aria-expanded="false" aria-controls="faq-a3"><span data-i18n="faq_q3">Is this a diagnostic tool?</span></button></h3>
+            <div class="faq-panel" id="faq-a3" role="region" aria-labelledby="faq-q3" aria-hidden="true"><p data-i18n="faq_a3">No. SocialMind is a practice and reflection tool for educational settings, not a diagnostic or clinical product.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q4" aria-expanded="false" aria-controls="faq-a4"><span data-i18n="faq_q4">How does implementation work?</span></button></h3>
+            <div class="faq-panel" id="faq-a4" role="region" aria-labelledby="faq-q4" aria-hidden="true"><p data-i18n="faq_a4">Implementation starts with a demo conversation, a walkthrough, and a discussion of school needs before any pilot proposal.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q5" aria-expanded="false" aria-controls="faq-a5"><span data-i18n="faq_q5">Does SocialMind replace educators?</span></button></h3>
+            <div class="faq-panel" id="faq-a5" role="region" aria-labelledby="faq-q5" aria-hidden="true"><p data-i18n="faq_a5">No. SocialMind keeps human educator judgment central and provides structured information to support adults in the loop.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q6" aria-expanded="false" aria-controls="faq-a6"><span data-i18n="faq_q6">Is the platform available in Hebrew?</span></button></h3>
+            <div class="faq-panel" id="faq-a6" role="region" aria-labelledby="faq-q6" aria-hidden="true"><p data-i18n="faq_a6">The website supports English and Hebrew, and the product direction includes a bilingual experience for schools.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q7" aria-expanded="false" aria-controls="faq-a7"><span data-i18n="faq_q7">Is VR required?</span></button></h3>
+            <div class="faq-panel" id="faq-a7" role="region" aria-labelledby="faq-q7" aria-hidden="true"><p data-i18n="faq_a7">No. VR is an optional practice layer for moments where presence and realism add value.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="faq-q8" aria-expanded="false" aria-controls="faq-a8"><span data-i18n="faq_q8">What happens after a demo request?</span></button></h3>
+            <div class="faq-panel" id="faq-a8" role="region" aria-labelledby="faq-q8" aria-hidden="true"><p data-i18n="faq_a8">We follow up to understand your context, answer questions, and decide together whether a pilot discussion makes sense.</p></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="closing-section-v2" aria-labelledby="closing-hdg">
-      <div class="container">
-        <p class="eyebrow eyebrow-light"><span data-i18n="closing_eyebrow">Pilot conversations are open</span></p>
-        <h2 id="closing-hdg" data-i18n="closing_title">Let's give students a safer place to practice.</h2>
-        <p data-i18n="closing_text">Whether you're a school, educator, partner, or organization - we'd love to hear from you.</p>
+    <section class="home-final-cta closing-section-v2" aria-labelledby="closing-hdg">
+      <div class="section-container">
+        <h2 id="closing-hdg" data-i18n="closing_title">Ready to see SocialMind in action?</h2>
+        <p data-i18n="closing_text">Start with a demo conversation and explore whether SocialMind fits your school community.</p>
         <div class="closing-actions">
-          <a href="contact.html" class="btn btn-cyan" data-i18n="closing_cta_primary">Book a school pilot</a>
-          <a href="about.html" class="btn btn-ghost-light" data-i18n="closing_cta_secondary">Explore our mission</a>
+          <a href="contact.html" class="btn btn-cyan" data-i18n="closing_cta_primary">Request a Demo</a>
+          <a href="about.html" class="btn btn-ghost-light" data-i18n="closing_cta_secondary">Explore Our Mission</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" aria-label="Site footer">
-    <div class="container">
+  <footer class="site-footer" id="site-footer" aria-label="Site footer">
+    <div class="section-container">
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="index.html" class="brand" aria-label="SocialMind Home">
             <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo footer-brand-logo">
             <span class="brand-name" dir="ltr" style="font-family:'Schibsted Grotesk',sans-serif;">SocialMind</span>
           </a>
-          <p class="footer-tagline" data-i18n="footer_tagline">Beating the fear, bringing friends near. Calm, immersive social practice for teens.</p>
+          <p class="footer-tagline" data-i18n="footer_tagline">AI-powered social skills practice for schools.</p>
         </div>
 
         <div class="footer-col">
           <span class="footer-col-h" data-i18n="footer_col1_h">Product</span>
           <ul>
-            <li><a href="product.html" data-i18n="footer_col1_1">How it works</a></li>
-            <li><a href="#audience-paths" data-i18n="footer_col1_2">For schools</a></li>
-            <li><a href="impact.html" data-i18n="footer_col1_3">Evidence</a></li>
+            <li><a href="product.html" data-i18n="footer_col1_1">Product Overview</a></li>
+            <li><a href="#practice-journey" data-i18n="footer_col1_2">Student Experience</a></li>
+            <li><a href="#built-for-schools" data-i18n="footer_col1_3">AI & Feedback</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <span class="footer-col-h" data-i18n="footer_col2_h">Company</span>
+          <span class="footer-col-h" data-i18n="footer_col2_h">For Schools</span>
           <ul>
-            <li><a href="about.html" data-i18n="footer_col2_1">About</a></li>
-            <li><a href="team.html" data-i18n="footer_col2_2">Team</a></li>
-            <li><a href="impact.html" data-i18n="footer_col2_3">Impact</a></li>
+            <li><a href="#built-for-schools" data-i18n="footer_col2_1">For Schools</a></li>
+            <li><a href="#demo-pilot" data-i18n="footer_col2_2">Implementation / Pilot</a></li>
+            <li><a href="contact.html" data-i18n="footer_col2_3">Request a Demo</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
-          <span class="footer-col-h" data-i18n="footer_col3_h">Contact</span>
+          <span class="footer-col-h" data-i18n="footer_col3_h">Research & Safety</span>
           <ul>
-            <li><a href="mailto:socialmind2025@gmail.com" dir="ltr" data-i18n="footer_col3_1">socialmind2025@gmail.com</a></li>
-            <li><span data-i18n="footer_col3_2">Israel</span></li>
-            <li><a href="contact.html" data-i18n="footer_col3_3">Book a pilot</a></li>
+            <li><a href="impact.html" data-i18n="footer_col3_1">Research & Educational Principles</a></li>
+            <li><a href="#faq" data-i18n="footer_col3_2">Privacy & Safety</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col4_h">Company</span>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_col4_1">About & Team</a></li>
+            <li><a href="contact.html" data-i18n="footer_col4_2">Contact</a></li>
+            <li><a href="mailto:socialmind2025@gmail.com" dir="ltr" data-i18n="footer_email">socialmind2025@gmail.com</a></li>
+            <li><a href="contact.html" class="footer-demo-link" data-i18n="footer_demo_cta">Request a Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col5_h">Legal</span>
+          <ul>
+            <li><a href="#faq" data-i18n="footer_col5_1">Privacy Policy</a></li>
+            <li><a href="contact.html" data-i18n="footer_col5_2">Terms</a></li>
+            <li><span data-i18n="footer_language_note">English / עברית</span></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-fine">
-        <span data-i18n="footer_fine">© 2026 SocialMind · A youth-led educational initiative · EN / עברית</span>
+        <span data-i18n="footer_fine">© 2026 SocialMind · Youth-led educational initiative</span>
       </div>
     </div>
   </footer>
@@ -309,10 +316,41 @@
       var btn = document.getElementById('nav-toggle');
       var nav = document.getElementById('nav-right');
       if (!btn || !nav) return;
+
+      function closeMenu() {
+        nav.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.textContent = '☰';
+        document.body.classList.remove('nav-open');
+      }
+
       btn.addEventListener('click', function () {
         var open = nav.classList.toggle('open');
         btn.setAttribute('aria-expanded', open ? 'true' : 'false');
         btn.textContent = open ? '✕' : '☰';
+        document.body.classList.toggle('nav-open', open);
+      });
+
+      nav.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', closeMenu);
+      });
+
+      document.addEventListener('keydown', function (event) {
+        if (event.key === 'Escape') closeMenu();
+      });
+    })();
+
+    (function () {
+      document.querySelectorAll('.faq-item button').forEach(function (button) {
+        button.addEventListener('click', function () {
+          var item = button.closest('.faq-item');
+          var panel = document.getElementById(button.getAttribute('aria-controls'));
+          var open = button.getAttribute('aria-expanded') === 'true';
+
+          button.setAttribute('aria-expanded', open ? 'false' : 'true');
+          item.classList.toggle('open', !open);
+          if (panel) panel.setAttribute('aria-hidden', open ? 'true' : 'false');
+        });
       });
     })();
   </script>

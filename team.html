@@ -1,85 +1,36 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SocialMind – Team</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Primary navigation">
-            <a href="index.html" class="brand" aria-label="SocialMind Home">
-                <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo">
-                <span class="brand-name">SocialMind</span>
-            </a>
-
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
-                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
-                    <li><a href="product.html" data-i18n="nav_product">How It Works</a></li>
-                    <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
-                    <li><a href="team.html" aria-current="page" data-i18n="nav_team">Team</a></li>
-                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
-                </ul>
-
-                <div class="lang-switch" role="group" aria-label="Language switcher">
-                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="team-hero" class="page-section page-hero" aria-labelledby="team-title">
-            <div class="container narrow-content">
-                <h1 id="team-title" data-i18n="team_title">Meet the Team</h1>
-                <p data-i18n="team_intro">
-                    SocialMind is built by a focused student team combining advanced technology, product thinking, and a mission to improve teen social confidence.
-                </p>
-            </div>
-        </section>
-
-        <section id="team-members" class="page-section section-soft" aria-labelledby="team-members-title">
-            <div class="container">
-                <h2 id="team-members-title" data-i18n="core_team_title">Core Team</h2>
-
-                <div class="card-grid team-grid">
-                    <article class="team-card">
-                        <img src="images/team/nikol.jpeg" alt="Nikol Chechelnitski" class="team-photo">
-                        <h3 class="team-name">Nikol Chechelnitski</h3>
-                        <p class="team-role" data-i18n="nikol_role">CEO &amp; CTO</p>
-                        <p class="team-bio" data-i18n="nikol_bio">Leads strategy and the technical development of SocialMind.</p>
-                        <p class="team-contact">
-                            <strong data-i18n="team_email_label">Email:</strong>
-                            <a href="mailto:socialmind2025@gmail.com">socialmind2025@gmail.com</a><br>
-                            <strong data-i18n="team_phone_label">Phone:</strong>
-                            <a href="tel:+972532278777">053-227-8777</a>
-                        </p>
-                        <a class="team-link" href="https://www.linkedin.com/in/nikol-chechelnitski-015685376/" target="_blank" rel="noopener noreferrer" data-i18n="team_linkedin">LinkedIn -&gt;</a>
-                    </article>
-
-                    <article class="team-card">
-                        <img src="images/team/arthur.jpeg" alt="Arthur Koshkin" class="team-photo">
-                        <h3 class="team-name">Arthur Koshkin</h3>
-                        <p class="team-role" data-i18n="arthur_role">Co-CTO &amp; Marketing Manager</p>
-                        <p class="team-bio" data-i18n="arthur_bio">Supports engineering and leads marketing and outreach.</p>
-
-                        <a class="team-link" href="https://www.linkedin.com/in/arthur-kosh/" target="_blank" rel="noopener noreferrer" data-i18n="team_linkedin">LinkedIn -&gt;</a>
-                    </article>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="i18n.js" defer></script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="en" dir="ltr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Team - SocialMind</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,700;0,800;1,400&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&family=Assistant:wght@400;600;700;800&family=Heebo:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css"></head><body class="site-v1"><header class="site-header">
+    <nav class="navbar" aria-label="Primary navigation">
+      <a href="index.html" class="brand" aria-label="SocialMind Home">
+        <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo">
+        <span class="brand-name" dir="ltr" style="font-family:'Schibsted Grotesk',sans-serif;">SocialMind</span>
+      </a>
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="nav-right" aria-expanded="false" aria-label="Toggle navigation menu">☰</button>
+      <div class="nav-right" id="nav-right">
+        <ul class="nav-links">
+          <li><a href="product.html" data-i18n data-i18n-en="Product" data-i18n-he="מוצר">Product</a></li>
+          <li><a href="for-schools.html" data-i18n data-i18n-en="For Schools" data-i18n-he="לבתי ספר">For Schools</a></li>
+          <li><a href="research.html" data-i18n data-i18n-en="Research" data-i18n-he="מחקר">Research</a></li>
+          <li><a href="privacy-safety.html" data-i18n data-i18n-en="Privacy" data-i18n-he="פרטיות">Privacy</a></li>
+          <li><a href="implementation.html" data-i18n data-i18n-en="Implementation" data-i18n-he="יישום">Implementation</a></li>
+          <li><a href="about.html" aria-current="page" data-i18n data-i18n-en="About" data-i18n-he="אודות">About</a></li>
+        </ul>
+        <div class="lang-switch" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עב</button>
+        </div>
+        <a href="request-demo.html" class="btn btn-primary nav-cta" data-i18n data-i18n-en="Request a Demo" data-i18n-he="בקשת הדגמה">Request a Demo</a>
+      </div>
+    </nav>
+  </header><main><section class="page-hero-v1 team-page-hero"><div class="section-container"><div><span class="page-kicker" data-i18n="team_page_kicker">About &amp; Team</span><h1 data-i18n="team_title">The Team Behind SocialMind</h1><p data-i18n="team_intro">A student-led team combining product development, AI, psychology, business strategy, and immersive technology.</p></div><aside class="team-hero-note"><span class="team-roadmap-label" data-i18n="team_roadmap_label">One shared roadmap</span><p data-i18n="team_roadmap">Clear ownership across product, AI and psychology, business strategy, and technical development keeps the team aligned around one shared roadmap.</p></aside></div></section><section class="v1-band team-section team-page-roster" aria-labelledby="team-members-heading"><div class="section-container"><div class="v1-section-head team-section-head"><span class="team-kicker" data-i18n="team_kicker">Student-led team</span><h2 id="team-members-heading" data-i18n="team_members_title">Team members</h2></div><div class="team-grid"><article class="team-profile team-profile--lead" aria-labelledby="team-page-nikol-name"><div class="team-photo team-photo--nikol"><img src="images/team/nikol-chechelnitski.png" width="276" height="224" loading="lazy" decoding="async" alt="Portrait of Nikol Chechelnitski, CEO and AI &amp; Psychology Lead at SocialMind." data-i18n-attr="alt" data-i18n-attr-key="team_nikol_alt"></div><div class="team-profile-copy"><h3 id="team-page-nikol-name" data-i18n="team_nikol_name">Nikol Chechelnitski</h3><p class="team-role" data-i18n="team_nikol_role">CEO · AI &amp; Psychology Lead</p></div></article><article class="team-profile" aria-labelledby="team-page-arthur-name"><div class="team-photo team-photo--arthur"><img src="images/team/arthur-koshkin.png" width="276" height="214" loading="lazy" decoding="async" alt="Portrait of Arthur Koshkin, Business &amp; Strategy Lead at SocialMind." data-i18n-attr="alt" data-i18n-attr-key="team_arthur_alt"></div><div class="team-profile-copy"><h3 id="team-page-arthur-name" data-i18n="team_arthur_name">Arthur Koshkin</h3><p class="team-role" data-i18n="team_arthur_role">Business &amp; Strategy Lead</p></div></article><article class="team-profile" aria-labelledby="team-page-vlad-name"><div class="team-photo team-photo--vlad"><img src="images/team/vlad-fridman.png" width="284" height="230" loading="lazy" decoding="async" alt="Portrait of Vlad Fridman, Product &amp; VR Developer at SocialMind." data-i18n-attr="alt" data-i18n-attr-key="team_vlad_alt"></div><div class="team-profile-copy"><h3 id="team-page-vlad-name" data-i18n="team_vlad_name">Vlad Fridman</h3><p class="team-role" data-i18n="team_vlad_role">Product &amp; VR Developer</p></div></article><article class="team-profile" aria-labelledby="team-page-daniel-name"><div class="team-photo team-photo--daniel"><img src="images/team/daniel-melnikovskii.png" width="280" height="218" loading="lazy" decoding="async" alt="Portrait of Daniel Melnikovskii, VR &amp; Technical Developer at SocialMind." data-i18n-attr="alt" data-i18n-attr-key="team_daniel_alt"></div><div class="team-profile-copy"><h3 id="team-page-daniel-name" data-i18n="team_daniel_name">Daniel Melnikovskii</h3><p class="team-role" data-i18n="team_daniel_role">VR &amp; Technical Developer</p></div></article></div></div></section></main><footer class="site-footer" aria-label="Site footer">
+  <div class="section-container">
+    <div class="footer-grid">
+      <div class="footer-brand"><a href="index.html" class="brand" aria-label="SocialMind Home"><img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo footer-brand-logo"><span class="brand-name" dir="ltr" style="font-family:'Schibsted Grotesk',sans-serif;">SocialMind</span></a><p class="footer-tagline" data-i18n data-i18n-en="AI-powered social skills practice for schools." data-i18n-he="תרגול מיומנויות חברתיות מבוסס AI לבתי ספר.">AI-powered social skills practice for schools.</p></div>
+      <div class="footer-col"><span class="footer-col-h" data-i18n data-i18n-en="Product" data-i18n-he="מוצר">Product</span><ul><li><a href="product.html" data-i18n data-i18n-en="Product Overview" data-i18n-he="סקירת מוצר">Product Overview</a></li><li><a href="product.html#student-practice" data-i18n data-i18n-en="Student Experience" data-i18n-he="חוויית תלמידים">Student Experience</a></li><li><a href="product.html#ai-feedback" data-i18n data-i18n-en="AI &amp; Feedback" data-i18n-he="AI ומשוב">AI & Feedback</a></li></ul></div>
+      <div class="footer-col"><span class="footer-col-h" data-i18n data-i18n-en="For Schools" data-i18n-he="לבתי ספר">For Schools</span><ul><li><a href="for-schools.html" data-i18n data-i18n-en="For Schools" data-i18n-he="לבתי ספר">For Schools</a></li><li><a href="implementation.html" data-i18n data-i18n-en="Implementation / Pilot" data-i18n-he="יישום / פיילוט">Implementation / Pilot</a></li><li><a href="request-demo.html" data-i18n data-i18n-en="Request a Demo" data-i18n-he="בקשת הדגמה">Request a Demo</a></li></ul></div>
+      <div class="footer-col"><span class="footer-col-h" data-i18n data-i18n-en="Research &amp; Safety" data-i18n-he="מחקר ובטיחות">Research & Safety</span><ul><li><a href="research.html" data-i18n data-i18n-en="Research &amp; Educational Principles" data-i18n-he="מחקר ועקרונות חינוכיים">Research & Educational Principles</a></li><li><a href="privacy-safety.html" data-i18n data-i18n-en="Privacy &amp; Safety" data-i18n-he="פרטיות ובטיחות">Privacy & Safety</a></li></ul></div>
+      <div class="footer-col"><span class="footer-col-h" data-i18n data-i18n-en="Company" data-i18n-he="החברה">Company</span><ul><li><a href="about.html" data-i18n data-i18n-en="About &amp; Team" data-i18n-he="אודות וצוות">About & Team</a></li><li><a href="contact.html" data-i18n data-i18n-en="Contact" data-i18n-he="יצירת קשר">Contact</a></li><li><a href="mailto:socialmind2025@gmail.com" dir="ltr" data-i18n data-i18n-en="socialmind2025@gmail.com" data-i18n-he="socialmind2025@gmail.com">socialmind2025@gmail.com</a></li></ul></div>
+      <div class="footer-col"><span class="footer-col-h" data-i18n data-i18n-en="Legal" data-i18n-he="משפטי">Legal</span><ul><li><a href="privacy-policy.html" data-i18n data-i18n-en="Privacy Policy" data-i18n-he="מדיניות פרטיות">Privacy Policy</a></li><li><a href="terms.html" data-i18n data-i18n-en="Terms" data-i18n-he="תנאים">Terms</a></li><li><span data-i18n data-i18n-en="English / עברית" data-i18n-he="English / עברית">English / עברית</span></li></ul></div>
+    </div>
+    <div class="footer-fine"><span data-i18n data-i18n-en="© 2026 SocialMind · Youth-led educational initiative" data-i18n-he="© 2026 SocialMind · יוזמה חינוכית בהובלת נוער">© 2026 SocialMind · Youth-led educational initiative</span></div>
+  </div>
+ </footer><script src="i18n.js" defer></script><script src="site.js" defer></script></body></html>

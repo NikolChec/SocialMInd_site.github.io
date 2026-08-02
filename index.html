@@ -2,142 +2,529 @@
 <html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SocialMind – Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="home3_meta_title">SocialMind | AI-powered social-skills practice for schools</title>
+  <meta name="description" content="SocialMind connects guided student practice, supportive AI feedback, educator insight, and optional immersive scenarios in one school-ready system." data-i18n-attr="content" data-i18n-attr-key="home3_meta_description">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SocialMind | AI-powered social-skills practice for schools" data-i18n-attr="content" data-i18n-attr-key="home3_meta_title">
+  <meta property="og:description" content="Guided social-skills practice, supportive AI feedback, and educator insight in one school-focused system." data-i18n-attr="content" data-i18n-attr-key="home3_meta_description_short">
+
+  <link rel="icon" type="image/png" href="images/socialmind-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400;0,600;0,700;0,800;1,400&amp;family=Hanken+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@500;600&amp;family=Assistant:wght@400;600;700;800&amp;family=Heebo:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20260802-4">
 </head>
 
-<body>
-    <header class="site-header">
-        <nav class="navbar" aria-label="Primary navigation">
-            <a href="index.html" class="brand" aria-label="SocialMind Home">
-                <img src="images/socialmind-logo.png" alt="SocialMind logo" class="brand-logo">
-                <span class="brand-name">SocialMind</span>
-            </a>
+<body class="home-redesign">
+  <a class="skip-link" href="#main-content" data-i18n="home3_skip_link">Skip to main content</a>
 
-            <div class="nav-right">
-                <ul class="nav-links">
-                    <li><a href="index.html" aria-current="page" data-i18n="nav_home">Home</a></li>
-                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
-                    <li><a href="product.html" data-i18n="nav_product">How It Works</a></li>
-                    <li><a href="impact.html" data-i18n="nav_impact">Impact</a></li>
-                    <li><a href="team.html" data-i18n="nav_team">Team</a></li>
-                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+  <header class="site-header" data-site-header>
+    <nav class="navbar" aria-label="Primary navigation" data-i18n-attr="aria-label" data-i18n-attr-key="home3_nav_label">
+      <a href="index.html" class="brand" aria-label="SocialMind home" data-i18n-attr="aria-label" data-i18n-attr-key="home3_brand_label" aria-current="page">
+        <img src="images/socialmind-logo.png" width="500" height="500" alt="SocialMind logo" class="brand-logo" data-i18n-attr="alt" data-i18n-attr-key="home3_logo_alt">
+        <span class="brand-name" dir="ltr">SocialMind</span>
+      </a>
+
+      <button type="button" class="nav-toggle" data-nav-toggle aria-controls="nav-right" aria-expanded="false" aria-label="Open navigation menu" data-open-label-en="Open navigation menu" data-open-label-he="פתיחת תפריט ניווט" data-close-label-en="Close navigation menu" data-close-label-he="סגירת תפריט ניווט">
+        <span aria-hidden="true">☰</span>
+      </button>
+
+      <div class="nav-right" id="nav-right">
+        <ul class="nav-links">
+          <li><a href="product.html" data-i18n="nav_product">Product</a></li>
+          <li><a href="for-schools.html" data-i18n="nav_schools">For Schools</a></li>
+          <li><a href="#system-loop" data-i18n="home3_nav_how">How It Works</a></li>
+          <li><a href="#evidence" data-i18n="home3_nav_evidence">Evidence</a></li>
+          <li><a href="about.html" data-i18n="nav_company">About</a></li>
+        </ul>
+
+        <div class="lang-switch" role="group" aria-label="Choose language" data-i18n-attr="aria-label" data-i18n-attr-key="home3_language_label">
+          <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עברית</button>
+        </div>
+
+        <a href="request-demo.html" class="btn btn-primary nav-cta" data-i18n="nav_request_demo">Request a Demo</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content" class="homepage" tabindex="-1">
+    <section class="home-hero" aria-labelledby="hero-heading">
+      <div class="section-container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <p class="section-kicker" data-i18n="home3_hero_kicker">AI-powered social-skills practice for schools</p>
+          <h1 id="hero-heading" data-i18n="home3_hero_title">Help students practise real social situations—with feedback educators can trust.</h1>
+          <p class="hero-lead" data-i18n="home3_hero_lead">SocialMind connects guided student practice, supportive AI feedback, educator insight, and optional immersive scenarios in one school-ready system.</p>
+
+          <div class="hero-actions">
+            <a href="request-demo.html" class="btn btn-primary" data-i18n="home3_primary_cta">Request a Demo</a>
+            <a href="#system-loop" class="btn btn-secondary" data-i18n="home3_secondary_cta">See How It Works</a>
+          </div>
+
+          <p class="hero-boundary" data-i18n="home3_hero_boundary">Working prototype · Educational practice, not diagnosis · VR is optional</p>
+        </div>
+
+        <div class="hero-system-preview" data-reveal aria-label="SocialMind connected product preview" data-i18n-attr="aria-label" data-i18n-attr-key="home3_hero_preview_label">
+          <div class="preview-toolbar">
+            <span class="status-pill status-current" data-i18n="home3_status_prototype">Working prototype</span>
+            <span data-i18n="home3_hero_preview_title">Connected practice system</span>
+          </div>
+
+          <div class="preview-layout">
+            <figure class="preview-practice">
+              <picture>
+                <source srcset="images/product/hero-socialmind-session-optimized.jpg" type="image/jpeg">
+                <img src="images/product/hero-socialmind-session.png" width="1536" height="1024" fetchpriority="high" decoding="async" alt="SocialMind working prototype showing a guided school conversation" data-i18n-attr="alt" data-i18n-attr-key="home3_hero_image_alt">
+              </picture>
+              <figcaption>
+                <span data-i18n="home3_student_practice">Student practice</span>
+                <strong data-i18n="home3_guided_scenario">Guided school scenario</strong>
+              </figcaption>
+              <span class="optional-vr-badge" data-i18n="home3_optional_immersive">Optional immersive mode</span>
+            </figure>
+
+            <div class="preview-support-cards">
+              <article class="preview-feedback">
+                <span class="preview-label" data-i18n="home3_feedback_label">AI-supported feedback</span>
+                <strong data-i18n="home3_feedback_title">Supportive next steps</strong>
+                <p data-i18n="home3_feedback_text">Specific, non-diagnostic guidance after practice.</p>
+              </article>
+
+              <article class="preview-educator">
+                <span class="preview-label" data-i18n="home3_educator_label">Proposed educator view</span>
+                <strong data-i18n="home3_educator_title">Selected practice patterns</strong>
+                <ul>
+                  <li data-i18n="home3_educator_row1">Goals and practice themes</li>
+                  <li data-i18n="home3_educator_row2">Possible next activity</li>
                 </ul>
+              </article>
+            </div>
+          </div>
 
-                <div class="lang-switch" role="group" aria-label="Language switcher">
-                    <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
-                    <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">HE</button>
+          <ol class="preview-flow" aria-label="SocialMind practice flow" data-i18n-attr="aria-label" data-i18n-attr-key="home3_preview_flow_label">
+            <li><span>01</span><strong data-i18n="home3_flow_practice">Practice</strong></li>
+            <li><span>02</span><strong data-i18n="home3_flow_feedback">Feedback</strong></li>
+            <li><span>03</span><strong data-i18n="home3_flow_reflect">Reflect</strong></li>
+            <li><span>04</span><strong data-i18n="home3_flow_insight">Educator insight</strong></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-trust-strip" aria-label="Current SocialMind product facts" data-i18n-attr="aria-label" data-i18n-attr-key="home3_trust_label">
+      <div class="section-container trust-items">
+        <span data-i18n="home3_trust_1">Working prototype</span>
+        <span data-i18n="home3_trust_2">Designed for school use</span>
+        <span data-i18n="home3_trust_3">English + Hebrew experience</span>
+        <span data-i18n="home3_trust_4">Human judgment stays central</span>
+      </div>
+    </section>
+
+    <section class="problem-section" aria-labelledby="problem-heading">
+      <div class="section-container">
+        <div class="section-heading section-heading-left" data-reveal>
+          <p class="section-kicker" data-i18n="home3_problem_kicker">Why practice matters</p>
+          <h2 id="problem-heading" data-i18n="home3_problem_title">Knowing what to do is not the same as being ready in the moment.</h2>
+          <p data-i18n="home3_problem_intro">Students may understand the advice and still struggle to use it when a real social situation arrives.</p>
+        </div>
+
+        <div class="problem-contrast" data-reveal>
+          <article>
+            <span data-i18n="home3_problem_explain_label">Students receive explanations</span>
+            <h3 data-i18n="home3_problem_explain_title">Understanding comes first.</h3>
+            <p data-i18n="home3_problem_explain_text">Lessons, advice, and encouragement help students understand what they could try.</p>
+          </article>
+          <div class="contrast-divider" aria-hidden="true"><span>+</span></div>
+          <article class="problem-practice">
+            <span data-i18n="home3_problem_practice_label">Students still need rehearsal</span>
+            <h3 data-i18n="home3_problem_practice_title">Practice makes it usable.</h3>
+            <p data-i18n="home3_problem_practice_text">Repeated, low-pressure rehearsal helps turn understanding into something a student can use.</p>
+          </article>
+        </div>
+
+        <aside class="problem-note" data-reveal>
+          <strong data-i18n="home3_problem_note_title">A practice layer for school support</strong>
+          <p data-i18n="home3_problem_note_text">SocialMind is designed to add structured rehearsal between educator guidance and real school situations—not replace the adults who know students best.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="system-loop" class="system-section" aria-labelledby="system-heading">
+      <div class="section-container">
+        <div class="section-heading section-heading-light" data-reveal>
+          <p class="section-kicker section-kicker-light" data-i18n="home3_system_kicker">Connected practice-to-support loop</p>
+          <h2 id="system-heading" data-i18n="home3_system_title">One system turns practice into the next useful step.</h2>
+          <p data-i18n="home3_system_intro">Students practise, receive supportive feedback, reflect, and retry. Educators can review selected patterns and guide what comes next.</p>
+        </div>
+
+        <div class="system-walkthrough" data-system-tabs data-reveal>
+          <div class="system-step-list" role="tablist" aria-label="SocialMind system steps" data-i18n-attr="aria-label" data-i18n-attr-key="home3_system_tabs_label">
+            <button type="button" id="system-tab-1" role="tab" aria-selected="true" aria-controls="system-panel-1" tabindex="0">
+              <span>01</span>
+              <span><strong data-i18n="home3_step1_title">Practice</strong><small data-i18n="home3_step1_text">A student enters a guided school scenario and responds naturally.</small></span>
+            </button>
+            <button type="button" id="system-tab-2" role="tab" aria-selected="false" aria-controls="system-panel-2" tabindex="-1">
+              <span>02</span>
+              <span><strong data-i18n="home3_step2_title">Receive feedback</strong><small data-i18n="home3_step2_text">AI-supported feedback identifies a strength and one practical next step.</small></span>
+            </button>
+            <button type="button" id="system-tab-3" role="tab" aria-selected="false" aria-controls="system-panel-3" tabindex="-1">
+              <span>03</span>
+              <span><strong data-i18n="home3_step3_title">Reflect and retry</strong><small data-i18n="home3_step3_text">A short reflection helps the student choose what to repeat or change.</small></span>
+            </button>
+            <button type="button" id="system-tab-4" role="tab" aria-selected="false" aria-controls="system-panel-4" tabindex="-1">
+              <span>04</span>
+              <span><strong data-i18n="home3_step4_title">Educator insight</strong><small data-i18n="home3_step4_text">A proposed educator view surfaces selected patterns—not a diagnosis.</small></span>
+            </button>
+            <button type="button" id="system-tab-5" role="tab" aria-selected="false" aria-controls="system-panel-5" tabindex="-1">
+              <span>05</span>
+              <span><strong data-i18n="home3_step5_title">Continue support</strong><small data-i18n="home3_step5_text">The next practice can build on the student’s goal and educator judgment.</small></span>
+            </button>
+          </div>
+
+          <div class="system-stage">
+            <article id="system-panel-1" class="system-panel practice-panel" role="tabpanel" aria-labelledby="system-tab-1">
+              <div class="panel-toolbar"><span class="status-pill status-current" data-i18n="home3_status_prototype">Working prototype</span><span data-i18n="home3_panel1_label">Guided student practice</span></div>
+              <figure>
+                <picture>
+                  <source srcset="images/product/joining-a-group-optimized.jpg" type="image/jpeg">
+                  <img src="images/product/joining-a-group.png.png" width="1448" height="1086" loading="lazy" decoding="async" alt="SocialMind prototype scenario for practising how to join a group" data-i18n-attr="alt" data-i18n-attr-key="home3_scenario_image_alt">
+                </picture>
+                <figcaption data-i18n="home3_panel1_caption">A school-based conversation with a clear goal and the option to retry.</figcaption>
+              </figure>
+            </article>
+
+            <article id="system-panel-2" class="system-panel feedback-panel" role="tabpanel" aria-labelledby="system-tab-2" hidden>
+              <div class="panel-toolbar"><span class="status-pill status-concept" data-i18n="home3_status_example">Example feedback view</span><span data-i18n="home3_panel2_label">AI-supported feedback</span></div>
+              <div class="feedback-example">
+                <p class="ui-overline" data-i18n="home3_feedback_strength_label">Strength noticed</p>
+                <h3 data-i18n="home3_feedback_strength">You stayed in the conversation and responded clearly.</h3>
+                <div class="feedback-next">
+                  <span data-i18n="home3_feedback_next_label">Try next</span>
+                  <strong data-i18n="home3_feedback_next">Ask one follow-up question.</strong>
                 </div>
-            </div>
-        </nav>
-    </header>
+                <p class="panel-boundary" data-i18n="home3_feedback_boundary">Supportive · Specific · Non-diagnostic</p>
+              </div>
+            </article>
 
-    <main>
-        <section id="hero" class="hero-section" aria-labelledby="hero-title">
-            <div class="container">
-                <div class="hero-copy">
-                    <h1 id="hero-title" data-i18n="hero_title">Beating the fear, Bringing friends near.</h1>
-
-                    <p data-i18n="hero_p1">
-                        A safe, immersive way for teens to practice everyday social situations and build confidence-guided by real-time AI characters in VR.
-                    </p>
-
-                    <p data-i18n="hero_p2">
-                        We help students overcome social anxiety step by step, in a supportive virtual environment that adapts to their needs.
-                    </p>
-
-                    <div class="hero-actions">
-                        <a href="about.html" class="btn btn-primary" data-i18n="btn_learn_more">Learn More</a>
-                        <a href="product.html" class="btn btn-secondary" data-i18n="btn_see_how">See How It Works</a>
-                    </div>
-                </div>
-
-                <figure class="hero-image-wrapper">
-                    <img src="images/presenting.jpg" alt="SocialMind team presenting" class="hero-image">
-                </figure>
-            </div>
-        </section>
-
-        <section id="helps-with" class="page-section" aria-labelledby="helps-with-title">
-            <div class="container">
-                <h2 id="helps-with-title" data-i18n="helps_title">What SocialMind Helps With</h2>
-                <div class="card-grid three-col">
-                    <article class="card">
-                        <h3 data-i18n="helps_card1_title">Social Anxiety</h3>
-                        <p data-i18n="helps_card1_text">Helping students who struggle with speaking in class or joining groups.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3 data-i18n="helps_card2_title">Real Practice, No Judgment</h3>
-                        <p data-i18n="helps_card2_text">AI-powered characters allow safe, repeatable practice without pressure.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3 data-i18n="helps_card3_title">Stronger Social-Emotional Skills</h3>
-                        <p data-i18n="helps_card3_text">Building confidence, communication, and emotional self-awareness.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="why-it-matters" class="page-section section-soft" aria-labelledby="why-it-matters-title">
-            <div class="container narrow-content">
-                <h2 id="why-it-matters-title" data-i18n="why_title">Why Social Skills Matter</h2>
-                <p data-i18n="why_text">
-                    Many students avoid raising their hand or speaking up-not because they don't care, but because social situations feel overwhelming. SocialMind turns avoided moments into opportunities for growth.
-                </p>
-            </div>
-        </section>
-
-        <section id="audience" class="page-section" aria-labelledby="audience-title">
-            <div class="container">
-                <h2 id="audience-title" data-i18n="audience_title">Who It's For</h2>
-                <div class="card-grid three-col">
-                    <article class="card">
-                        <h3 data-i18n="audience_card1_title">Students</h3>
-                        <p data-i18n="audience_card1_text">A safe way to practice situations that feel intimidating in real life.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3 data-i18n="audience_card2_title">Educators &amp; Counselors</h3>
-                        <p data-i18n="audience_card2_text">A modern SEL tool that boosts support capacity in schools.</p>
-                    </article>
-
-                    <article class="card">
-                        <h3 data-i18n="audience_card3_title">Partners &amp; Innovators</h3>
-                        <p data-i18n="audience_card3_text">For schools and organizations exploring meaningful mental-health innovation.</p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="highlights" class="page-section section-soft" aria-labelledby="highlights-title">
-            <div class="container narrow-content">
-                <h2 id="highlights-title" data-i18n="highlights_title">Highlights</h2>
-                <ul class="content-list">
-                    <li data-i18n="highlights_1">AI-powered interactive characters</li>
-                    <li data-i18n="highlights_2">Short VR scenarios based on real school life</li>
-                    <li data-i18n="highlights_3">Personal goals after each session</li>
-                    <li data-i18n="highlights_4">Designed with counselors &amp; advisors</li>
-                    <li data-i18n="highlights_5">Built by students with a mission</li>
+            <article id="system-panel-3" class="system-panel reflection-panel" role="tabpanel" aria-labelledby="system-tab-3" hidden>
+              <div class="panel-toolbar"><span class="status-pill status-concept" data-i18n="home3_status_concept">Concept view</span><span data-i18n="home3_panel3_label">Reflection and retry</span></div>
+              <div class="reflection-sheet">
+                <p class="ui-overline" data-i18n="home3_reflection_overline">After practice</p>
+                <h3 data-i18n="home3_reflection_title">Pause before the next attempt.</h3>
+                <ul>
+                  <li data-i18n="home3_reflection_q1">What felt easier than expected?</li>
+                  <li data-i18n="home3_reflection_q2">What would you like to try differently?</li>
                 </ul>
-            </div>
-        </section>
+                <div class="micro-goal">
+                  <span data-i18n="home3_micro_goal_label">One small goal</span>
+                  <strong data-i18n="home3_micro_goal_text">Ask one follow-up question.</strong>
+                </div>
+              </div>
+            </article>
 
-        <section id="footer-teaser" class="page-section" aria-label="About SocialMind">
-            <div class="container narrow-content teaser-card">
-                <p data-i18n="teaser_text">Want to understand the story behind SocialMind?</p>
-                <a href="about.html" class="teaser-link" data-i18n="teaser_link">Explore our mission -&gt;</a>
-            </div>
-        </section>
-    </main>
+            <article id="system-panel-4" class="system-panel educator-panel" role="tabpanel" aria-labelledby="system-tab-4" hidden>
+              <div class="panel-toolbar"><span class="status-pill status-planned" data-i18n="home3_status_proposed">Proposed educator view</span><span data-i18n="home3_panel4_label">Selected practice insight</span></div>
+              <div class="educator-concept">
+                <header>
+                  <div><span data-i18n="home3_educator_concept_label">Practice summary</span><strong data-i18n="home3_educator_concept_title">Minimum necessary insight</strong></div>
+                  <span class="human-review" data-i18n="home3_human_review">Human review</span>
+                </header>
+                <dl>
+                  <div><dt data-i18n="home3_educator_theme">Practice theme</dt><dd data-i18n="home3_educator_theme_value">Starting and sustaining conversation</dd></div>
+                  <div><dt data-i18n="home3_educator_goal">Student goal</dt><dd data-i18n="home3_educator_goal_value">Ask one follow-up question</dd></div>
+                  <div><dt data-i18n="home3_educator_possible">Possible next activity</dt><dd data-i18n="home3_educator_possible_value">Retry with a new school scenario</dd></div>
+                </dl>
+                <p data-i18n="home3_educator_concept_note">This is a proposed workflow. Product, privacy, and governance details still require school review.</p>
+              </div>
+            </article>
 
-    <script src="i18n.js" defer></script>
+            <article id="system-panel-5" class="system-panel next-panel" role="tabpanel" aria-labelledby="system-tab-5" hidden>
+              <div class="panel-toolbar"><span class="status-pill status-concept" data-i18n="home3_status_concept">Concept view</span><span data-i18n="home3_panel5_label">Continued support</span></div>
+              <div class="next-practice-map">
+                <div><span>01</span><strong data-i18n="home3_next_goal">Student goal</strong><small data-i18n="home3_next_goal_text">Ask a follow-up question</small></div>
+                <div><span>02</span><strong data-i18n="home3_next_review">Educator review</strong><small data-i18n="home3_next_review_text">Confirm the next useful focus</small></div>
+                <div><span>03</span><strong data-i18n="home3_next_practice">Suggested practice</strong><small data-i18n="home3_next_practice_text">Join a group conversation</small></div>
+              </div>
+              <p class="next-practice-note" data-i18n="home3_next_note">Technology can suggest a direction. The educator remains responsible for the decision.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modules-section" aria-labelledby="modules-heading">
+      <div class="section-container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker" data-i18n="home3_modules_kicker">Product layers</p>
+          <h2 id="modules-heading" data-i18n="home3_modules_title">A focused system, with each layer doing one job.</h2>
+          <p data-i18n="home3_modules_intro">The student app, AI feedback, and educator workflow form the core. VR extends selected scenarios where immersion adds value.</p>
+        </div>
+
+        <div class="modules-layout">
+          <article class="module-primary" data-reveal>
+            <div class="module-heading">
+              <span class="status-pill status-current" data-i18n="home3_status_prototype">Working prototype</span>
+              <span class="module-code" aria-hidden="true">01</span>
+            </div>
+            <h3 data-i18n="home3_module_student_title">Student application</h3>
+            <p data-i18n="home3_module_student_text">A structured place to practise realistic school situations, reflect, retry, and carry one small goal into the next moment.</p>
+            <ul class="feature-list">
+              <li data-i18n="home3_module_student_b1">Guided school scenarios</li>
+              <li data-i18n="home3_module_student_b2">Practice, reflection, and retry</li>
+              <li data-i18n="home3_module_student_b3">Personal goals and small real-world actions</li>
+              <li data-i18n="home3_module_student_b4">Progress direction in development</li>
+            </ul>
+            <div class="student-path" aria-label="Student practice sequence" data-i18n-attr="aria-label" data-i18n-attr-key="home3_student_path_label">
+              <span data-i18n="home3_student_path_1">Choose</span>
+              <span data-i18n="home3_student_path_2">Practise</span>
+              <span data-i18n="home3_student_path_3">Reflect</span>
+              <span data-i18n="home3_student_path_4">Retry</span>
+            </div>
+          </article>
+
+          <div class="module-stack">
+            <article class="module-card" data-reveal>
+              <div class="module-heading"><span class="status-pill status-developing" data-i18n="home3_status_developing">In development</span><span class="module-code" aria-hidden="true">02</span></div>
+              <h3 data-i18n="home3_module_ai_title">AI feedback layer</h3>
+              <p data-i18n="home3_module_ai_text">Responsive roleplay and supportive feedback designed around specific next steps, clear boundaries, and non-diagnostic summaries.</p>
+            </article>
+
+            <article class="module-card" data-reveal>
+              <div class="module-heading"><span class="status-pill status-planned" data-i18n="home3_status_proposed">Proposed educator view</span><span class="module-code" aria-hidden="true">03</span></div>
+              <h3 data-i18n="home3_module_educator_title">Educator dashboard</h3>
+              <p data-i18n="home3_module_educator_text">Selected practice patterns, possible next steps, and progress direction—with human review and minimum necessary information.</p>
+            </article>
+          </div>
+        </div>
+
+        <article class="optional-module" data-reveal>
+          <div>
+            <span class="status-pill status-optional" data-i18n="home3_status_optional">Optional layer</span>
+            <h3 data-i18n="home3_module_vr_title">Immersive practice, only where it helps.</h3>
+            <p data-i18n="home3_module_vr_text">VR can add presence for selected situations, natural spoken responses, and supervised repetition. It is not required for the rest of SocialMind.</p>
+          </div>
+          <div class="optional-facts">
+            <span data-i18n="home3_module_vr_b1">Selected situations</span>
+            <span data-i18n="home3_module_vr_b2">Spoken responses</span>
+            <span data-i18n="home3_module_vr_b3">Supervised use</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="roles-section" aria-labelledby="roles-heading">
+      <div class="section-container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker" data-i18n="home3_roles_kicker">Two connected journeys</p>
+          <h2 id="roles-heading" data-i18n="home3_roles_title">Useful for students. Responsible for educators.</h2>
+          <p data-i18n="home3_roles_intro">The student experience and educator workflow are designed to support each other without collapsing privacy or professional boundaries.</p>
+        </div>
+
+        <div class="role-journeys" data-reveal>
+          <article class="student-journey">
+            <p class="role-label" data-i18n="home3_student_label">For students</p>
+            <h3 data-i18n="home3_student_title">Practice before the pressure is real.</h3>
+            <ul class="feature-list">
+              <li data-i18n="home3_student_b1">A safe place to practise and retry</li>
+              <li data-i18n="home3_student_b2">Realistic school situations</li>
+              <li data-i18n="home3_student_b3">Supportive, specific feedback</li>
+              <li data-i18n="home3_student_b4">Personal goals and small next actions</li>
+              <li data-i18n="home3_student_b5">Greater preparation before the real moment</li>
+            </ul>
+            <p class="role-note" data-i18n="home3_student_note">The aim is preparation—not perfection.</p>
+          </article>
+
+          <article class="educator-journey">
+            <p class="role-label" data-i18n="home3_educator_role_label">For educators</p>
+            <h3 data-i18n="home3_educator_role_title">Insight without replacing professional judgment.</h3>
+            <ul class="feature-list">
+              <li data-i18n="home3_educator_b1">Understand what students are practising</li>
+              <li data-i18n="home3_educator_b2">Review selected summaries instead of default raw transcripts</li>
+              <li data-i18n="home3_educator_b3">Notice recurring areas where support may help</li>
+              <li data-i18n="home3_educator_b4">Suggest or assign a next activity</li>
+              <li data-i18n="home3_educator_b5">Keep professional judgment central</li>
+            </ul>
+            <p class="role-note" data-i18n="home3_educator_note">Educator views are proposed and still require workflow, privacy, and governance validation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="evidence" class="evidence-section" aria-labelledby="evidence-heading">
+      <div class="section-container">
+        <div class="section-heading section-heading-left" data-reveal>
+          <p class="section-kicker" data-i18n="home3_evidence_kicker">Evidence</p>
+          <h2 id="evidence-heading" data-i18n="home3_evidence_title">Building evidence responsibly.</h2>
+          <p data-i18n="home3_evidence_intro">Technical activity, user testing, and educational impact are different kinds of evidence. SocialMind keeps those distinctions visible.</p>
+        </div>
+
+        <div class="evidence-columns" data-reveal>
+          <article>
+            <span>01</span>
+            <h3 data-i18n="home3_evidence_current_title">What exists now</h3>
+            <p data-i18n="home3_evidence_current_text">A working prototype and product testing used to learn whether core interactions function as intended.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3 data-i18n="home3_evidence_testing_title">What testing informs</h3>
+            <p data-i18n="home3_evidence_testing_text">Student testing informs interaction design. Educator conversations inform workflow and implementation choices.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3 data-i18n="home3_evidence_not_title">What we do not claim yet</h3>
+            <p data-i18n="home3_evidence_not_text">SocialMind does not yet claim proven clinical, educational, or long-term social outcomes.</p>
+          </article>
+        </div>
+
+        <div class="evidence-note" data-reveal>
+          <p data-i18n="home3_evidence_note">Formal impact evaluation is planned. We measure before we make claims.</p>
+          <a href="research.html" class="text-link" data-i18n="home3_evidence_link">Read our research approach</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="safety-section" aria-labelledby="safety-heading">
+      <div class="section-container safety-layout">
+        <div class="safety-copy" data-reveal>
+          <p class="section-kicker" data-i18n="home3_safety_kicker">Privacy, safety, and trust</p>
+          <h2 id="safety-heading" data-i18n="home3_safety_title">Responsible school use starts with clear boundaries.</h2>
+          <p data-i18n="home3_safety_intro">These are design commitments and implementation requirements—not certifications.</p>
+          <a href="privacy-safety.html" class="btn btn-secondary" data-i18n="home3_safety_cta">Read Privacy &amp; Safety</a>
+        </div>
+
+        <div class="safety-principles" data-reveal>
+          <article><span aria-hidden="true">01</span><div><h3 data-i18n="home3_safety_1_title">Data minimisation</h3><p data-i18n="home3_safety_1_text">Collect only what a school-approved workflow needs.</p></div></article>
+          <article><span aria-hidden="true">02</span><div><h3 data-i18n="home3_safety_2_title">Role-based access</h3><p data-i18n="home3_safety_2_text">Define who can see selected information and why.</p></div></article>
+          <article><span aria-hidden="true">03</span><div><h3 data-i18n="home3_safety_3_title">Age-appropriate AI</h3><p data-i18n="home3_safety_3_text">Set clear behaviour, input, and output boundaries.</p></div></article>
+          <article><span aria-hidden="true">04</span><div><h3 data-i18n="home3_safety_4_title">Educator oversight</h3><p data-i18n="home3_safety_4_text">Keep adults responsible for review and decisions.</p></div></article>
+          <article><span aria-hidden="true">05</span><div><h3 data-i18n="home3_safety_5_title">Non-diagnostic output</h3><p data-i18n="home3_safety_5_text">Practice summaries must not label or diagnose students.</p></div></article>
+          <article><span aria-hidden="true">06</span><div><h3 data-i18n="home3_safety_6_title">Professional judgment</h3><p data-i18n="home3_safety_6_text">SocialMind supports—not replaces—educators, counsellors, or professional care.</p></div></article>
+        </div>
+
+        <p class="safety-disclosure" data-reveal data-i18n="home3_safety_disclosure">Exact collection, retention, deletion, security, and model-use practices must be confirmed before school deployment.</p>
+      </div>
+    </section>
+
+    <section class="faq-section" aria-labelledby="faq-heading">
+      <div class="section-container faq-container">
+        <div class="section-heading" data-reveal>
+          <p class="section-kicker" data-i18n="home3_faq_kicker">FAQ</p>
+          <h2 id="faq-heading" data-i18n="home3_faq_title">Questions school teams ask first</h2>
+        </div>
+
+        <div class="faq-list js-accordion" data-reveal>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q1" aria-expanded="false" aria-controls="home-faq-a1"><span data-i18n="home3_faq_q1">How does SocialMind work?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a1" role="region" aria-labelledby="home-faq-q1" aria-hidden="true"><p data-i18n="home3_faq_a1">Students practise school-based social moments, receive supportive feedback, reflect, and retry. The product direction connects that practice with selected educator insight.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q2" aria-expanded="false" aria-controls="home-faq-a2"><span data-i18n="home3_faq_q2">What can educators see?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a2" role="region" aria-labelledby="home-faq-q2" aria-hidden="true"><p data-i18n="home3_faq_a2">The proposed direction focuses on selected summaries and minimum necessary information rather than default access to every private exchange. The workflow still requires school review.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q3" aria-expanded="false" aria-controls="home-faq-a3"><span data-i18n="home3_faq_q3">Is SocialMind a diagnostic or therapy tool?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a3" role="region" aria-labelledby="home-faq-q3" aria-hidden="true"><p data-i18n="home3_faq_a3">No. SocialMind is designed for educational practice and reflection. It does not diagnose students or replace educators, counsellors, psychologists, or professional support.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q4" aria-expanded="false" aria-controls="home-faq-a4"><span data-i18n="home3_faq_q4">Is VR required?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a4" role="region" aria-labelledby="home-faq-q4" aria-hidden="true"><p data-i18n="home3_faq_a4">No. VR is an optional practice layer for selected situations where presence and realism add value.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q5" aria-expanded="false" aria-controls="home-faq-a5"><span data-i18n="home3_faq_q5">What is built today?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a5" role="region" aria-labelledby="home-faq-q5" aria-hidden="true"><p data-i18n="home3_faq_a5">SocialMind has a working prototype. The educator dashboard, cross-session analytics, and parts of the connected workflow remain proposed or in development.</p></div>
+          </article>
+          <article class="faq-item">
+            <h3><button type="button" id="home-faq-q6" aria-expanded="false" aria-controls="home-faq-a6"><span data-i18n="home3_faq_q6">What happens after a demo request?</span></button></h3>
+            <div class="faq-panel" id="home-faq-a6" role="region" aria-labelledby="home-faq-q6" aria-hidden="true"><p data-i18n="home3_faq_a6">We start with a conversation, product walkthrough, and discussion of your school context. A request does not commit your school to a pilot.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-final-cta" aria-labelledby="closing-heading">
+      <div class="section-container" data-reveal>
+        <p class="section-kicker section-kicker-light" data-i18n="home3_final_kicker">Start with a conversation</p>
+        <h2 id="closing-heading" data-i18n="home3_final_title">See how SocialMind could support structured social-skills practice in your school.</h2>
+        <p data-i18n="home3_final_text">Start with a product walkthrough, ask the hard questions, and decide together whether a pilot conversation makes sense.</p>
+        <div class="final-actions">
+          <a href="request-demo.html" class="btn btn-cyan" data-i18n="home3_primary_cta">Request a Demo</a>
+          <a href="contact.html" class="btn btn-ghost-light" data-i18n="home3_contact_cta">Contact the Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Site footer" data-i18n-attr="aria-label" data-i18n-attr-key="home3_footer_label">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" aria-label="SocialMind home" data-i18n-attr="aria-label" data-i18n-attr-key="home3_brand_label">
+            <img src="images/socialmind-logo.png" width="500" height="500" alt="SocialMind logo" class="brand-logo footer-brand-logo" loading="lazy" decoding="async" data-i18n-attr="alt" data-i18n-attr-key="home3_logo_alt">
+            <span class="brand-name" dir="ltr">SocialMind</span>
+          </a>
+          <p class="footer-tagline" data-i18n="footer_tagline">AI-powered social skills practice for schools.</p>
+          <p class="footer-boundary" data-i18n="home3_footer_boundary">Educational practice, not diagnosis. VR is optional.</p>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col1_h">Product</span>
+          <ul>
+            <li><a href="product.html" data-i18n="footer_col1_1">Product Overview</a></li>
+            <li><a href="#system-loop" data-i18n="home3_nav_how">How It Works</a></li>
+            <li><a href="product.html#ai-feedback" data-i18n="footer_col1_3">AI &amp; Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col2_h">For Schools</span>
+          <ul>
+            <li><a href="for-schools.html" data-i18n="footer_col2_1">For Schools</a></li>
+            <li><a href="implementation.html" data-i18n="footer_col2_2">Implementation / Pilot</a></li>
+            <li><a href="request-demo.html" data-i18n="footer_col2_3">Request a Demo</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col3_h">Research &amp; Safety</span>
+          <ul>
+            <li><a href="research.html" data-i18n="footer_col3_1">Research &amp; Educational Principles</a></li>
+            <li><a href="privacy-safety.html" data-i18n="footer_col3_2">Privacy &amp; Safety</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col4_h">Company</span>
+          <ul>
+            <li><a href="about.html" data-i18n="footer_col4_1">About &amp; Team</a></li>
+            <li><a href="contact.html" data-i18n="footer_col4_2">Contact</a></li>
+            <li><a href="mailto:socialmind2025@gmail.com" class="ltr-text">socialmind2025@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <span class="footer-col-h" data-i18n="footer_col5_h">Legal &amp; language</span>
+          <ul>
+            <li><a href="privacy-policy.html" data-i18n="footer_col5_1">Privacy Policy</a></li>
+            <li><a href="terms.html" data-i18n="footer_col5_2">Terms</a></li>
+          </ul>
+          <div class="lang-switch footer-lang-switch" role="group" aria-label="Choose language" data-i18n-attr="aria-label" data-i18n-attr-key="home3_language_label">
+            <button type="button" class="lang-btn" data-lang="en" aria-pressed="true">EN</button>
+            <button type="button" class="lang-btn" data-lang="he" aria-pressed="false">עברית</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-fine">
+        <span data-i18n="footer_fine">© 2026 SocialMind · Youth-led educational initiative</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="i18n.js?v=20260802-4" defer></script>
+  <script src="site.js?v=20260802-4" defer></script>
 </body>
 
 </html>

@@ -21,7 +21,7 @@
 - IMPORTANT: Define pilot responsibilities, school readiness criteria, and review process.
 
 ## About & Team
-- IMPORTANT: Confirm team titles and public bios.
+- COMPLETE: Team names, titles, and photographs were confirmed on 2026-08-02. Public biographies and social links remain intentionally omitted pending approval.
 - IMPORTANT: Verify exact names and wording for StartCup AI, SAGE World Cup, Georgia competition / ISC.
 - OPTIONAL LATER: Add advisor information only if approved and verified.
 

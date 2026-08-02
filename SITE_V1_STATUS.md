@@ -8,10 +8,10 @@
 | Research | research.html | Complete V1 | Complete | Complete | Needs final manual QA | No image | Request Demo | N/A | Add verified citations |
 | Privacy & Safety | privacy-safety.html | Complete V1 | Complete | Complete | Needs final manual QA | No image | Request Demo | N/A | Confirm data practices |
 | Implementation | implementation.html | Complete V1 | Complete | Complete | Needs final manual QA | No image | Request Demo | N/A | Define pilot materials |
-| About & Team | about.html | Complete V1 | Complete | Complete | Needs final manual QA | Team photos | Request Demo / Contact | N/A | Verify competitions and titles |
+| About & Team | about.html | Complete V1 | Complete | Complete | Team section QA complete | Four team portraits | Request Demo / Contact | N/A | Verify competitions; team names and titles confirmed |
 | Request a Demo | request-demo.html | Complete V1 | Complete | Complete | Needs final manual QA | No image | Email fallback | Client-side validation only | Real endpoint needed |
 | Contact | contact.html | Complete V1 | Complete | Complete | Needs final manual QA | No image | Request Demo / Email | N/A | Add verified social links later |
 | Privacy Policy | privacy-policy.html | Initial factual page | Complete | Complete | Needs final manual QA | No image | Contact | N/A | Legal review required |
 | Terms | terms.html | Initial factual page | Complete | Complete | Needs final manual QA | No image | Contact | N/A | Legal review required |
 | Legacy Impact | impact.html | Alias | Complete | Complete | Basic | No image | Research page | N/A | May remove after route migration |
-| Legacy Team | team.html | Alias | Complete | Complete | Basic | No image | About page | N/A | May remove after route migration |
+| Team | team.html | Complete V1 | Complete | Complete | Responsive EN/HE QA complete | Four team portraits | About page | N/A | Keep roster synchronized with about.html |

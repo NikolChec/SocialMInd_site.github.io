@@ -1,0 +1,9 @@
+node_modules/
+dist/
+base44/
+.deployment/
+.DS_Store
+.agents/
+design/
+design-qa.md
+skills-lock.json
